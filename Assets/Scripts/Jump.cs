@@ -11,13 +11,11 @@ public class Jump : MonoBehaviour
 
     Rigidbody2D rb;
 
-    bool canJump;
+    private bool canJump;
 
     // Start is called before the first frame update
     void Start()
     {
-        gravityScale = 2.2f;
-        fallingGravityScale = 3.0f;
         rb = GetComponent<Rigidbody2D>();
         canJump = true;
     }
@@ -28,7 +26,8 @@ public class Jump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             rb.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
-            canJump= false;
+            canJump = false;
+            rb.gravityScale = gravityScale;
         }
 
         if (rb.velocity.y >= 0)

@@ -11,12 +11,6 @@ public class GroundDetector : MonoBehaviour
 
     public List<Vector3> rays;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +26,15 @@ public class GroundDetector : MonoBehaviour
             {
                 count++;
                 Debug.DrawRay(transform.position + rays[i], transform.up * -1 * hit.distance, Color.green);
+
+                if (hit.transform.tag == "MobilePlataform")
+                {
+                    transform.parent = hit.transform;
+                }
+                else 
+                {
+                    transform.parent = null;
+                }
             }
 
             if (count > 0)
@@ -41,6 +44,7 @@ public class GroundDetector : MonoBehaviour
             else 
             {
                 grounded = false;
+                transform.parent = null;
             }
         }
     }
