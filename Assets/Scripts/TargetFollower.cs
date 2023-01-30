@@ -11,6 +11,14 @@ public class TargetFollower : MonoBehaviour
 
     void LateUpdate()
     {
+        Vector3 dir = target.transform.position - transform.position;
+        float distance = dir.magnitude;
+
+        if (distance > 4f)
+        {
+            speed = 10;
+        }
+
         transform.position = Vector3.Lerp(transform.position, target.position + offset, speed * Time.deltaTime);
     }
 }
