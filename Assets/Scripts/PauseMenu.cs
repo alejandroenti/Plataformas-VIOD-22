@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
         private set;
     }
 
+    public GameObject pauseMenu;
+
     // SINGLETON
     public static PauseMenu instance;
 
@@ -23,6 +25,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         isPaused = false;
+        pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,10 +36,12 @@ public class PauseMenu : MonoBehaviour
             if (isPaused)
             {
                 Time.timeScale = 1;
+                pauseMenu.SetActive(false);
             } 
             else
             {
                 Time.timeScale = 0;
+                pauseMenu.SetActive(true);
             }
 
             isPaused = !isPaused;
@@ -47,6 +52,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         isPaused = false;
+        pauseMenu.SetActive(false);
     }
 
     public void MainMenu()
