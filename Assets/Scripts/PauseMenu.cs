@@ -42,4 +42,16 @@ public class PauseMenu : MonoBehaviour
             isPaused = !isPaused;
         }
     }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        isPaused = false;
+    }
+
+    public void MainMenu()
+    {
+        // TO DO
+        Debug.Log("going to Main Menu");
+    }
 }
