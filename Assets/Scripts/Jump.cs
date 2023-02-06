@@ -12,18 +12,21 @@ public class Jump : MonoBehaviour
     Rigidbody2D rb;
 
     private bool canJump;
+    GroundDetector groundDetector;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        canJump = true;
+        groundDetector = GetComponent<GroundDetector>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
+        canJump = groundDetector.grounded;
+
+        if (Input.GetButtonDown("Jump") && canJump)
         {
             rb.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
             canJump = false;

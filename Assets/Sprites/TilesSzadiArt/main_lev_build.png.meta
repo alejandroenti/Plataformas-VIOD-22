@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -37745,15 +37745,15 @@ TextureImporter:
       main_lev_build_670: 1006564035
       main_lev_build_123: -1307686125
       main_lev_build_791: 2056939853
+      main_lev_build_861: 1333318306
       main_lev_build_129: 2083699966
       main_lev_build_635: -1017724952
-      main_lev_build_1311: 10254728
       main_lev_build_496: 1974017014
       main_lev_build_1711: 33276580
-      main_lev_build_861: 1333318306
       main_lev_build_835: 581243014
       main_lev_build_226: 236549688
       main_lev_build_1194: 463212869
+      main_lev_build_1311: 10254728
       main_lev_build_954: -2058068940
       main_lev_build_1421: 991991948
       main_lev_build_436: -280126730
@@ -37820,13 +37820,13 @@ TextureImporter:
       main_lev_build_468: -1651818355
       main_lev_build_465: 1711523872
       main_lev_build_651: -296255206
-      main_lev_build_398: -1228512249
-      main_lev_build_1308: -1885154211
       main_lev_build_940: -1047489997
+      main_lev_build_398: -1228512249
       main_lev_build_1466: 1784724607
-      main_lev_build_1450: -1679170697
+      main_lev_build_1308: -1885154211
       main_lev_build_652: -610285776
       main_lev_build_495: 1800744162
+      main_lev_build_1450: -1679170697
       main_lev_build_995: 1850632862
       main_lev_build_760: -223064928
       main_lev_build_1601: -1251923867
@@ -37948,8 +37948,8 @@ TextureImporter:
       main_lev_build_1095: 2067831804
       main_lev_build_431: 463298619
       main_lev_build_587: -1095091192
-      main_lev_build_599: 1561332028
       main_lev_build_876: 602970355
+      main_lev_build_599: 1561332028
       main_lev_build_232: 1027348497
       main_lev_build_419: -1854165900
       main_lev_build_544: 428291130
@@ -37982,15 +37982,15 @@ TextureImporter:
       main_lev_build_115: 1338021873
       main_lev_build_229: 1983200355
       main_lev_build_99: -242057733
-      main_lev_build_1336: -1117838218
-      main_lev_build_233: 2137175520
       main_lev_build_1649: 1680843222
-      main_lev_build_764: -2130631258
+      main_lev_build_233: 2137175520
+      main_lev_build_1336: -1117838218
       main_lev_build_792: 1591184379
+      main_lev_build_840: 105968158
       main_lev_build_1403: 1896306561
       main_lev_build_441: -1215108481
+      main_lev_build_764: -2130631258
       main_lev_build_100: 2113517559
-      main_lev_build_840: 105968158
       main_lev_build_1541: 113967576
       main_lev_build_517: -102449857
       main_lev_build_1529: 1614096479
@@ -38004,10 +38004,10 @@ TextureImporter:
       main_lev_build_860: -1864073198
       main_lev_build_206: 504148001
       main_lev_build_1539: 344705702
-      main_lev_build_1443: -2125453671
       main_lev_build_1744: 468770494
       main_lev_build_981: 1587001899
       main_lev_build_566: -1282379622
+      main_lev_build_1443: -2125453671
       main_lev_build_592: -1384960541
       main_lev_build_537: 1781238820
       main_lev_build_1176: -1415368727
@@ -38597,6 +38597,7 @@ TextureImporter:
       main_lev_build_892: -447815834
       main_lev_build_1747: -390027583
       main_lev_build_84: -2084636755
+      main_lev_build_1475: -803162132
       main_lev_build_22: -1096259997
       main_lev_build_1274: 1421211494
       main_lev_build_925: 451630428
@@ -38620,7 +38621,6 @@ TextureImporter:
       main_lev_build_1518: 2004824034
       main_lev_build_935: -1526957329
       main_lev_build_1172: -956686860
-      main_lev_build_1475: -803162132
       main_lev_build_1431: 934518287
       main_lev_build_1237: 266534082
       main_lev_build_648: -450361401
@@ -38634,21 +38634,21 @@ TextureImporter:
       main_lev_build_1483: 1923117347
       main_lev_build_1184: 43304947
       main_lev_build_219: -1505914022
-      main_lev_build_384: -1165795449
+      main_lev_build_1447: -1563561213
       main_lev_build_308: -589412097
       main_lev_build_1303: 5778307
       main_lev_build_880: -583328355
-      main_lev_build_1447: -1563561213
+      main_lev_build_384: -1165795449
       main_lev_build_1142: 384154049
       main_lev_build_8: 193939647
       main_lev_build_93: 1326136076
       main_lev_build_352: -186823057
       main_lev_build_1074: 466454828
+      main_lev_build_1457: -843305372
       main_lev_build_747: -642455642
       main_lev_build_506: 1343433392
-      main_lev_build_1146: 672284030
       main_lev_build_1168: 1743753133
-      main_lev_build_1457: -843305372
+      main_lev_build_1146: 672284030
       main_lev_build_565: 1319873070
       main_lev_build_1454: -1482572265
       main_lev_build_656: -1555600401
@@ -38739,8 +38739,8 @@ TextureImporter:
       main_lev_build_1486: 278807630
       main_lev_build_532: -2004019882
       main_lev_build_636: -1009637742
-      main_lev_build_1042: -57813999
       main_lev_build_1658: -1590846371
+      main_lev_build_1042: -57813999
       main_lev_build_1266: -66813621
       main_lev_build_634: -1115464279
       main_lev_build_1528: -984551175
@@ -38761,11 +38761,11 @@ TextureImporter:
       main_lev_build_1583: 422864525
       main_lev_build_1678: 1479942836
       main_lev_build_102: 1938593449
-      main_lev_build_1005: 904895700
-      main_lev_build_1138: 682087774
       main_lev_build_1132: -489120355
+      main_lev_build_1005: 904895700
       main_lev_build_1128: -2126423681
       main_lev_build_462: -489877426
+      main_lev_build_1138: 682087774
       main_lev_build_1405: 160678865
       main_lev_build_771: 26007210
       main_lev_build_1153: 1368002941
@@ -39013,14 +39013,14 @@ TextureImporter:
       main_lev_build_1277: -721128769
       main_lev_build_1731: 1563144642
       main_lev_build_300: -567066375
-      main_lev_build_825: -1868951236
       main_lev_build_1217: 1528091825
       main_lev_build_460: -1461301382
       main_lev_build_556: 2091568876
-      main_lev_build_1246: 1204216008
+      main_lev_build_825: -1868951236
       main_lev_build_1490: -1575049652
       main_lev_build_824: 1362894844
       main_lev_build_285: -979654585
+      main_lev_build_1246: 1204216008
       main_lev_build_499: 1706052121
       main_lev_build_918: 1776633726
       main_lev_build_267: 41179170
