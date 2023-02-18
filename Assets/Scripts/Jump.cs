@@ -11,7 +11,7 @@ public class Jump : MonoBehaviour
 
     Rigidbody2D rb;
 
-    private bool canJump;
+    public bool canJump;
     GroundDetector groundDetector;
 
     // Start is called before the first frame update
@@ -41,7 +41,6 @@ public class Jump : MonoBehaviour
         if (rb.velocity.y < 0)
         {
             rb.gravityScale = fallingGravityScale;
-            canJump = true;
         }
     }
 }

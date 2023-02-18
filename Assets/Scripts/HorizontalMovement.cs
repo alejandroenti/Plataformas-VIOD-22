@@ -8,15 +8,19 @@ public class HorizontalMovement : MonoBehaviour
     public float speed = 5;
     public SpriteRenderer sr;
     public CapsuleCollider2D coll;
-    //public Animator anim;
+    public Animator anim;
     public GroundDetector ground;
+    public Jump jump;
+    public SpawnPlayerAttack pAttack;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();  
         coll = GetComponent<CapsuleCollider2D>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         ground = GetComponent<GroundDetector>();
+        jump = GetComponent<Jump>();
+        pAttack = GetComponent<SpawnPlayerAttack>();
     }
 
     private void FixedUpdate()
@@ -35,7 +39,9 @@ public class HorizontalMovement : MonoBehaviour
             sr.flipX = true;
             coll.offset = new Vector2(0.25f, 0);
         }
-        //anim.SetBool("Moving", horizontal != 0);
-        //anim.SetBool("Grounded", ground.grounded);
+        anim.SetBool("isMoving", horizontal != 0);
+        anim.SetBool("isGrounded", ground.grounded);
+        anim.SetBool("isJumping", !jump.canJump);
+        anim.SetBool("isAttacking", pAttack.isAttacking);
     }
 }
