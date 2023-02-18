@@ -13,6 +13,9 @@ public class HorizontalMovement : MonoBehaviour
     public Jump jump;
     public SpawnPlayerAttack pAttack;
 
+    public enum Directions { RIGHT, LEFT };
+    public Directions dir;
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();  
@@ -21,6 +24,7 @@ public class HorizontalMovement : MonoBehaviour
         ground = GetComponent<GroundDetector>();
         jump = GetComponent<Jump>();
         pAttack = GetComponent<SpawnPlayerAttack>();
+        dir = Directions.RIGHT;
     }
 
     private void FixedUpdate()
@@ -32,12 +36,14 @@ public class HorizontalMovement : MonoBehaviour
         {
             sr.flipX = false;
             coll.offset = new Vector2(-0.25f, 0);
+            dir= Directions.RIGHT;
 
         }
         if (horizontal < 0) 
         {
             sr.flipX = true;
             coll.offset = new Vector2(0.25f, 0);
+            dir = Directions.LEFT;
         }
         anim.SetBool("isMoving", horizontal != 0);
         anim.SetBool("isGrounded", ground.grounded);
