@@ -29,7 +29,6 @@ public class Jump : MonoBehaviour
         if (Input.GetButtonDown("Jump") && canJump)
         {
             rb.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
-            canJump = false;
             rb.gravityScale = gravityScale;
         }
 
