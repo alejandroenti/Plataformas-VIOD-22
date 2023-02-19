@@ -9,6 +9,8 @@ TagManager:
   - Locked
   - Platform
   - PlayerAttack
+  - Pointers
+  - Enemy
   layers:
   - Default
   - TransparentFX

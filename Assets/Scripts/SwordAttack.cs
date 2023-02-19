@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
-public class SwordAttack : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
 
     BoxCollider2D coll;
-    GameObject enemy;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +18,7 @@ public class SwordAttack : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            enemy = collision.gameObject;
-            enemy.GetComponent<EnemyController>().StartCoroutine(enemy.GetComponent<EnemyController>().Hit_Corutine());
+            Destroy(collision.gameObject);
         }
     }
 }
