@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public int lifes;
-    public bool hasLevelKey;
-    public bool levelPassed;
-    public bool gameOver;
+    public int lifes = 1;
+    public bool hasLevelKey = false;
+    public bool levelPassed = false;
+    public bool gameOver = false;
 
     private void Awake()
     {
