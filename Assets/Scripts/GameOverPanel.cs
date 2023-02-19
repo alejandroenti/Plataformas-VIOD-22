@@ -38,11 +38,6 @@ public class GameOverPanel : MonoBehaviour
         }
     }
 
-    public void PlayAgain()
-    {
-        SceneManager.LoadScene("Gym", LoadSceneMode.Single);
-    }
-
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
