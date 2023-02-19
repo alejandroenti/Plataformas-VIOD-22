@@ -49,5 +49,6 @@ public class HorizontalMovement : MonoBehaviour
         anim.SetBool("isGrounded", ground.grounded);
         anim.SetBool("isJumping", !jump.canJump);
         anim.SetBool("isAttacking", pAttack.isAttacking);
+        anim.SetBool("isAlive", GameManager.instance.lifes > 0);
     }
 }

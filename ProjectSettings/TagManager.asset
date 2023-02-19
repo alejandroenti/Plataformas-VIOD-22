@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - MobilePlataform
+  - Unlockeable
+  - Locked
+  - Platform
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
