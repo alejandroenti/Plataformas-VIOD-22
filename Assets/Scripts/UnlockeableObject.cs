@@ -11,12 +11,14 @@ public class UnlockeableObject : MonoBehaviour
     public float speed;
     public Vector3 offset = new Vector3(0, 0.00002f, 0);
 
+    PlaySound ps;
     float timer;
 
     // Start is called before the first frame update
     void Start()
     {
         coll = GetComponent<BoxCollider2D>();
+        ps = GetComponent<PlaySound>();
         float timer = timerSetUp;
     }
 
@@ -39,7 +41,8 @@ public class UnlockeableObject : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameManager.instance.hasLevelKey = true;
-            Destroy(gameObject);
+            ps.Play();
+            Destroy(gameObject, 0.3f);
         }
     }
 }

@@ -12,11 +12,13 @@ public class SpawnPlayerAttack : MonoBehaviour
     public GameObject attack;
     BoxCollider2D attackCollider;
     HorizontalMovement direction;
+    AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
         attackCollider = attack.GetComponent<BoxCollider2D>();
+        source = attackCollider.GetComponent<AudioSource>();
         direction = GetComponent<HorizontalMovement>();
     }
 
@@ -37,6 +39,7 @@ public class SpawnPlayerAttack : MonoBehaviour
 
             attackCollider.enabled = true;
             isAttacking = true;
+            source.Play();
 
         }
 

@@ -14,11 +14,15 @@ public class Jump : MonoBehaviour
     public bool canJump;
     GroundDetector groundDetector;
 
+    public GameObject jump;
+    AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         groundDetector = GetComponent<GroundDetector>();
+        source = jump.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,8 @@ public class Jump : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
             rb.gravityScale = gravityScale;
+
+            source.Play();
         }
 
         if (rb.velocity.y >= 0)
