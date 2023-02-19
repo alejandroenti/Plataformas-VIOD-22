@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathPanel : MonoBehaviour
 {
@@ -39,12 +40,11 @@ public class DeathPanel : MonoBehaviour
 
     public void PlayAgain()
     {
-        Debug.Log("Reloading current scene");
+        SceneManager.LoadScene("Gym", LoadSceneMode.Single);
     }
 
     public void MainMenu()
     {
-        // TO DO
-        Debug.Log("going to Main Menu");
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }
