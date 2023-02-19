@@ -25,10 +25,4 @@ public class GameManager : MonoBehaviour
         levelPassed = false;
         gameOver = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

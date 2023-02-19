@@ -12,6 +12,7 @@ TagManager:
   - Pointers
   - Enemy
   - EnemyAttack
+  - Limiter
   layers:
   - Default
   - TransparentFX

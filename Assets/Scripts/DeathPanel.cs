@@ -38,8 +38,17 @@ public class DeathPanel : MonoBehaviour
         }
     }
 
+    public void PlayAgain()
+    {
+        GameManager.instance.lifes = 1;
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Gym", LoadSceneMode.Single);
+    }
+
     public void MainMenu()
     {
+        GameManager.instance.lifes = 1;
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }
