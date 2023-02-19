@@ -40,8 +40,8 @@ public class GameOverPanel : MonoBehaviour
 
     public void PlayAgain()
     {
-        GameManager.instance.lifes = 1;
         Time.timeScale = 1;
+        GameManager.instance.lifes = 1;
         SceneManager.LoadScene("Gym", LoadSceneMode.Single);
     }
 
