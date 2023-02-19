@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class EnemySwordAttack : MonoBehaviour
 {
 
-    BoxCollider2D coll;
+    public BoxCollider2D coll;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +16,10 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            GameManager.instance.lifes--;
+            coll.enabled = false;
         }
     }
 }

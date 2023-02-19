@@ -11,6 +11,7 @@ TagManager:
   - PlayerAttack
   - Pointers
   - Enemy
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX

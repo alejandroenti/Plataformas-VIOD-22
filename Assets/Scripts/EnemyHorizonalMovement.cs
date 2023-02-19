@@ -5,8 +5,11 @@ using UnityEngine;
 public class EnemyHorizonalMovement : MonoBehaviour
 {
 
+    public GameObject attack;
+    BoxCollider2D attackCollider;
+
     public SpriteRenderer sr;
-    LinearMovement lm;
+    public LinearMovement lm;
     BoxCollider2D coll;
 
     // Start is called before the first frame update
@@ -15,6 +18,7 @@ public class EnemyHorizonalMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         lm = GetComponent<LinearMovement>();
         coll = GetComponent<BoxCollider2D>();
+        attackCollider = attack.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -24,11 +28,13 @@ public class EnemyHorizonalMovement : MonoBehaviour
         {
             sr.flipX = true;
             coll.offset = new Vector2(0.08f, 0);
+            attackCollider.offset = new Vector2(-0.2f, 0);
         }
         else
         {
             sr.flipX = false;
             coll.offset = new Vector2(-0.08f, 0);
+            attackCollider.offset = new Vector2(0.2f, 0);
         }
     }
 }

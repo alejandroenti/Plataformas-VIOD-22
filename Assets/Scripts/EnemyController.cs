@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public int lifes = 3;
     public bool hit = false;
     public bool isAlive = true;
+    public bool isAttacking = false;
     public float animationTimer = 0.5f;
 
     public Animator anim;
@@ -29,6 +30,7 @@ public class EnemyController : MonoBehaviour
         anim.SetBool("isMoving", true);
         anim.SetBool("hit", hit);
         anim.SetBool("isAlive", isAlive);
+        anim.SetBool("isAttacking", isAttacking);
     }
 
     public void Muerte()
